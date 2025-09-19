@@ -112,7 +112,7 @@ system_info() {
     echo "Load Average: $(cat /proc/loadavg)"
 
     echo -e "\nListening Services on Port 25:"
-    ss -tulnp | grep ':25 ' || echo "No services listening on port 25."
+    ss -tulnp | grep '25 ' || echo "No services listening on port 25."
 }
 
 main() {
